@@ -39,9 +39,7 @@ gulp
   .task('build:sass', () => {
     return gulp
       .src(scssFilePaths)
-      .pipe(autoprefixer({
-        browsers: ['last 2 versions']
-      }))
+      .pipe(autoprefixer())
       .pipe(sass({
         includePaths: [
           "node_modules",
