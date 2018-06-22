@@ -36,10 +36,32 @@ package to validate custom PHP files against the
 The validator for custom SASS is [stylelint][]. This project uses the
 [SASS Guidelines][] with _some_ modifications:
 
-* There is a max nesting limit (max-nesting-depth) of 4
-* Qualifying a selector by type is allowed (selector-no-qualifying-type)
-* Maximum allowed compound selectors is increased from 3 to 4 (selector-max-compound-selectors)
-* Alphabetical order of properties is not enforced (order/properties-alphabetical-order)
+**Rule:** `max-nesting-depth`
+* Recommend setting is `1` but then, what is the point of SASS
+
+**Rule:** `selector-no-qualifying-type`
+* Qualifying a selector by type is allowed.
+
+**Rule** `selector-max-compound-selectors`
+* Maximum allowed compound selectors is increased from 3 to 4.
+
+**Rule** `order/properties-alphabetical-order`
+* Alphabetical order of properties is not enforced.
+
+**Rule** `no-unsupported-browser-features`
+* This is a plugin used in conjunction with `.browserslistrc` to provide a
+Warning if their are any conflicts with your code and browser support.
+
+To temporarily disable the linter for certain blocks you can use the syntax
+below. More information can be found in the linter[docs][].
+
+`
+/* stylelint-disable selector-no-id, declaration-no-important  */
+#id {
+  color: pink !important;
+}
+/* stylelint-enable */
+`
 
 [Drupal]: https://drupal.org
 [Drupal coding standards for JavaScript]: https://www.drupal.org/docs/develop/standards/javascript/javascript-coding-standards
@@ -48,3 +70,4 @@ The validator for custom SASS is [stylelint][]. This project uses the
 [PHPCS]: https://github.com/squizlabs/PHP_CodeSniffer
 [stylelint]: https://github.com/stylelint/stylelint
 [SASS Guidelines]: https://sass-guidelin.es
+[docs]: https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#turning-rules-off-from-within-your-css
