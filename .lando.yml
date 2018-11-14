@@ -1,4 +1,4 @@
-name: drupal-scaffold
+name: pm-playground
 recipe: drupal8
 
 config:
