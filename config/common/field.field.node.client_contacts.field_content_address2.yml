@@ -1,0 +1,27 @@
+uuid: 087d116f-f308-49c9-bf3d-3dcfc26d3c3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_address2
+    - node.type.client_contacts
+id: node.client_contacts.field_content_address2
+field_name: field_content_address2
+entity_type: node
+bundle: client_contacts
+label: 'Content Address2'
+description: 'This is where you would put address line 2.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      client_contacts: client_contacts
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

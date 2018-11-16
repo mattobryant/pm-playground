@@ -1,0 +1,27 @@
+uuid: 375e3eb4-8e3f-4a0e-9973-6eb23adfbb0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_title
+    - node.type.client_contacts
+id: node.client_contacts.field_contact_title
+field_name: field_contact_title
+entity_type: node
+bundle: client_contacts
+label: 'Contact Title'
+description: 'This is where you would put the contact person''s title.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      client_contacts: client_contacts
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

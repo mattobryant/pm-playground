@@ -1,0 +1,27 @@
+uuid: 83787b77-9d31-4736-a2f0-5d2c73d1309c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_mobile_number
+    - node.type.client_contacts
+id: node.client_contacts.field_contact_mobile_number
+field_name: field_contact_mobile_number
+entity_type: node
+bundle: client_contacts
+label: 'Contact Mobile Number'
+description: 'This is where you would put the contact person''s mobile number.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      client_contacts: client_contacts
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

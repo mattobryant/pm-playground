@@ -1,0 +1,30 @@
+uuid: ef30dabf-4dcd-411c-9254-6dea6d178e48
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.client_contacts.body
+    - node.type.client_contacts
+  module:
+    - text
+    - user
+id: node.client_contacts.teaser
+targetEntityType: node
+bundle: client_contacts
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

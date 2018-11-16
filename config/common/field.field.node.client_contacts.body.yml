@@ -1,0 +1,22 @@
+uuid: 43cf3e2c-0dcc-4b11-8f4e-d971934d7421
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.client_contacts
+  module:
+    - text
+id: node.client_contacts.body
+field_name: body
+entity_type: node
+bundle: client_contacts
+label: 'Contact Description'
+description: 'This is where you would include a description of the contact.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
