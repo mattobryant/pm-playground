@@ -1,0 +1,25 @@
+uuid: a118dcff-c0a9-44de-ba19-6c36b8b95ebe
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.tool_review
+    - field.storage.comment.field_rating
+id: comment.tool_review.field_rating
+field_name: field_rating
+entity_type: comment
+bundle: tool_review
+label: Rating
+description: "Please enter a rating/score of how useful this tool has been on a scale of 1-10, 10 being the best and one being the lowest. \r\nPlease enter 0 for any untested tool. "
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 10
+  prefix: ''
+  suffix: ''
+field_type: decimal
