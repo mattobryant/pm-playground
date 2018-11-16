@@ -1,18 +1,16 @@
-uuid: 0c3f181a-c389-48ce-9f56-4c51d6e9e0d5
+uuid: f00afca4-1634-4e79-a3a1-b9afdd26db7e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.article
+    - node.type.clients
   module:
     - text
-_core:
-  default_config_hash: Ay3b2hq42cpQTFB_lNu8S2ZxuVIY6-dlBsc7vLeJ-YY
-id: node.article.body
+id: node.clients.body
 field_name: body
 entity_type: node
-bundle: article
+bundle: clients
 label: Body
 description: ''
 required: false

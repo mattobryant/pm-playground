@@ -1,28 +1,28 @@
-uuid: 7d452754-05e5-4add-91e1-a1805b6d4e0c
+uuid: e7f0e047-e241-43a1-bf81-f93de924f5c9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - node.type.page
+    - field.field.node.clients.body
+    - node.type.clients
   module:
     - text
     - user
-_core:
-  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.default
+id: node.clients.default
 targetEntityType: node
-bundle: page
+bundle: clients
 mode: default
 content:
   body:
     label: hidden
     type: text_default
-    weight: 100
-    region: content
+    weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
   links:
-    weight: 101
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden: {  }
