@@ -34,6 +34,7 @@
         "drupal/devel": "^1.2",
         "drupal/honeypot": "^1.27",
         "drupal/oomph_paragraphs": "^1.0",
+        "drupal/paragraphs": "^1.5",
         "drupal/recreate_block_content": "^2.0",
         "drupal/seckit": "^1.0",
         "drush/drush": "^9.2",

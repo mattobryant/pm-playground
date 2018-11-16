@@ -1,0 +1,61 @@
+uuid: e9f99056-e1c1-4a03-ada9-06ae8a19f9f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.tool_review
+    - field.field.comment.tool_review.comment_body
+    - field.field.comment.tool_review.field_rating
+    - field.field.comment.tool_review.field_screenshot
+    - field.field.comment.tool_review.field_tool_url
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: comment.tool_review.default
+targetEntityType: comment
+bundle: tool_review
+mode: default
+content:
+  comment_body:
+    type: text_textarea
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_rating:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_screenshot:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_tool_url:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  subject:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Tool Name'
+    third_party_settings: {  }
+hidden:
+  author: true

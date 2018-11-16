@@ -1,0 +1,8 @@
+uuid: 29e3244f-55c3-4644-986a-190464454b1a
+langcode: en
+status: true
+dependencies: {  }
+id: tool_review
+label: 'Tool Review'
+target_entity_type_id: paragraph
+description: ''

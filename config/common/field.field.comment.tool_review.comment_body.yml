@@ -1,0 +1,21 @@
+uuid: a276ae79-5414-44a9-9720-9342a3499da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.tool_review
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.tool_review.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: tool_review
+label: 'Description: '
+description: "What is this tool for? What does it do?\r\nWhy is this of value to our team?"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

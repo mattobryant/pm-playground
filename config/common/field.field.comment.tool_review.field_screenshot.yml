@@ -1,0 +1,38 @@
+uuid: 1ede65b3-14a6-4d4b-b553-65ba6447ae25
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.tool_review
+    - field.storage.comment.field_screenshot
+  module:
+    - image
+id: comment.tool_review.field_screenshot
+field_name: field_screenshot
+entity_type: comment
+bundle: tool_review
+label: Screenshot
+description: 'Please enter a screenshot of the tool.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

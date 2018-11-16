@@ -1,0 +1,23 @@
+uuid: e600d241-1c75-406f-81c9-20ddaa4db6e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.tool_review
+    - field.storage.comment.field_tool_url
+  module:
+    - link
+id: comment.tool_review.field_tool_url
+field_name: field_tool_url
+entity_type: comment
+bundle: tool_review
+label: 'Tool URL'
+description: 'Please enter the URLs associated with this tool '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
